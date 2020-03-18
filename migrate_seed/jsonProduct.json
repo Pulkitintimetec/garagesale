@@ -1,0 +1,26 @@
+[
+    {
+        
+        "Name":"Trimmer",
+        "Cost":"1011",
+        "Quantity":"10"
+    },
+    {
+       
+        "Name":"Bulb",
+        "Cost":"100",
+        "Quantity":"230"
+    },
+    {
+       
+        "Name":"Bag",
+        "Cost":"2100",
+        "Quantity":"5"
+    },
+    {
+        
+        "Name":"Laptop",
+        "Cost":"50300",
+        "Quantity":"8"
+    }
+]
