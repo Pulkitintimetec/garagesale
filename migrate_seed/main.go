@@ -3,13 +3,14 @@ package main
 import (
 	"context"
 	"flag"
-	"garagesale/migrate_seed/schema"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/Pulkitintimetec/garagesale/migrate_seed/schema"
 )
 
 func main() {

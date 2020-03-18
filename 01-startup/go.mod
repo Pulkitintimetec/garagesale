@@ -1,3 +1,3 @@
-module github.com/ardanlabs/garagesale
+module github.com/Pulkitintimetec/garagesale
 
-go 1.12
+go 1.13
