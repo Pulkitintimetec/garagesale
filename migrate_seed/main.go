@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Pulkitintimetec/garagesale/migrate_seed/schema"
+	"github.com/Pulkitintimetec/garagesale/schema"
 )
 
 func main() {
