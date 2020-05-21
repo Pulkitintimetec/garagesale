@@ -1,0 +1,12 @@
+
+{
+        
+    "ID":"5cf37266-3473-4006-984f-9325122678b7",
+    "Name":"Admin Gopher",
+    "Email":"admin@example.com",
+    "Roles":"ADMIN,USER",
+    "PasswordHash":"$2a$10$9/XASPKBbJKVfCAZKDH.UuhsuALDr5vVm6VrYA9VFR8rccK86C1hW",
+    "date_created":"2019-03-24 00:00:00",
+    "date_updated":"2019-03-24 00:00:00"
+    
+}

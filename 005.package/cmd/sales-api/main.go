@@ -2,14 +2,14 @@ package main
 
 import (
 	"context"
-	"flag"
-	"garagesale/schema"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"garagesale/005.package/cmd/sales-api/internal/handlers"
 )
 
 func main() {
@@ -19,31 +19,12 @@ func main() {
 	log.Printf("main : Started")
 	defer log.Println("main : Completed")
 
-	flag.Parse()
-
-	switch flag.Arg(0) {
-	case "migrate":
-		schema.OpenDb()
-		log.Println("Migrations complete")
-		return
-
-	case "seed":
-		schema.UsingDb()
-		log.Println("Seed data complete")
-		return
-		// case "GetAllData":
-		// 	schema.List()
-		// 	log.Println("Seed data complete")
-		// 	return
-	}
-	// =========================================================================
-	// Start Database
 	// =========================================================================
 	// Start API Service
 
 	api := http.Server{
 		Addr:         "localhost:9000",
-		Handler:      http.HandlerFunc(schema.List),
+		Handler:      http.HandlerFunc(handlers.List),
 		ReadTimeout:  5 * time.Second,
 		WriteTimeout: 5 * time.Second,
 	}
